@@ -1,0 +1,58 @@
+button {
+  margin-bottom: 40px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease;
+
+  &.yellow {
+    background-color: rgba($color: #ffffff, $alpha: 1);
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+      scale: 1.05;
+      background-color: yellow;
+      color: black;
+      letter-spacing: 1px;
+      border-radius: 10px;
+    }
+  }
+
+  &.normal {
+    background-color: rgba($color: #ffffff, $alpha: 1);
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+      scale: 1.05;
+      background-color: white;
+      color: black;
+      letter-spacing: 1px;
+      border-radius: 10px;
+    }
+  }
+  &.inverted {
+    background-color: rgba($color: #000000, $alpha: 1);
+    opacity: 0.9;
+    color: white;
+    &:hover {
+      opacity: 1;
+      scale: 1.05;
+      background-color: rgb(82, 230, 96);
+      color: black;
+      letter-spacing: 1px;
+      border-radius: 10px;
+    }
+  }
+
+  &.google {
+    color: white;
+    background-color: rgba($color: #3779c3, $alpha: 1);
+    &:hover {
+      scale: 1.05;
+      letter-spacing: 1px;
+      border-radius: 10px;
+    }
+  }
+}

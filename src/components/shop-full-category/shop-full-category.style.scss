@@ -1,0 +1,10 @@
+.back-to-list {
+  background-color: lightblue;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  &:hover {
+    outline: solid black 1px;
+  }
+}

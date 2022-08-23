@@ -1,0 +1,33 @@
+.signup-container {
+  width: 600px;
+  height: 600px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 60px 80px;
+
+  .form-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    label {
+      margin-right: 40px;
+    }
+    input {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      border: none;
+      border-bottom: solid black 1px;
+      padding: 5px;
+      width: 70%;
+      outline: none;
+    }
+  }
+
+  .signin-buttons-container {
+    width: 200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    Button {
+      width: 400px;
+    }
+  }
+}

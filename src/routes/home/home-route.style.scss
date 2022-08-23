@@ -1,0 +1,26 @@
+.home-route-container {
+  padding: 40px;
+  text-align: center;
+  h1 {
+    font-family: "DynaPuff", cursive;
+    font-size: 4rem;
+    margin: 10px;
+  }
+  p {
+    margin: 10px 0 30px 0;
+  }
+}
+
+.quickfruit-landing-image {
+  height: 600px;
+  width: 600px;
+  background-image: url("https://i.ibb.co/F4rsTYd/edgar-castrejon-1-Csa-Vdwf-Iew-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
