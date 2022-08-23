@@ -18,21 +18,15 @@ const Navigation = () => {
       <div className="navigation-container">
         <NavigationIcon onClick={() => navigate("home")} />
         <div className="navigation-links-container">
-          <NavigationLink as="span" to="shop" bgColor="blue">
+          <NavigationLink to="shop" bgColor="blue">
             SHOP
           </NavigationLink>
-          <NavigationLink as="span" to="our-story">
-            OUR STORY
-          </NavigationLink>
+          <NavigationLink to="our-story">OUR STORY</NavigationLink>
 
           {currentUser ? (
-            <NavigationLink as="span" to="home">
-              SIGNOUT
-            </NavigationLink>
+            <NavigationLink to="home">SIGNOUT</NavigationLink>
           ) : (
-            <NavigationLink as="span" to="authentification">
-              SIGNIN
-            </NavigationLink>
+            <NavigationLink to="authentification">SIGNIN</NavigationLink>
           )}
           <div className="cart-icon-wraper" onClick={handleCartClick}>
             {" "}
