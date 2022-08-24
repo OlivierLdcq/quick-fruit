@@ -24,7 +24,9 @@ const Navigation = () => {
           <NavigationLink to="our-story">OUR STORY</NavigationLink>
 
           {currentUser ? (
-            <NavigationLink to="home">SIGNOUT</NavigationLink>
+            <NavigationLink to="home" onClick={() => handleSignOut()}>
+              SIGNOUT
+            </NavigationLink>
           ) : (
             <NavigationLink to="authentification">SIGNIN</NavigationLink>
           )}
