@@ -40,9 +40,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
-googleProvider.setCustomParameters({
-  prompt: "select_account",
-});
 
 export const createUserInDataBase = async (user, otherInfos) => {
   const { displayName, email, uid } = user;
@@ -54,6 +51,9 @@ export const createUserInDataBase = async (user, otherInfos) => {
 };
 
 export const handleGoogleSignIn = async () => {
+  googleProvider.setCustomParameters({
+    prompt: "select_account",
+  });
   const result = await signInWithPopup(auth, googleProvider);
   const { user } = result;
   return user;
